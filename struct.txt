@@ -1,0 +1,134 @@
+termkit/
+├── main.c                    # 这个简化版本
+├── Makefile
+├── README.md
+│
+├── src/
+│   ├── common/
+│   │   ├── utils.c
+│   │   ├── utils.h
+│   │   ├── colors.c        # 终端颜色控制
+│   │   ├── colors.h
+│   │   ├── progress.c      # 进度条实现
+│   │   └── progress.h
+│   │
+│   ├── file_tools/         # 文件操作工具(4个)
+│   │   ├── tkls.c          # 增强版ls
+│   │   ├── tkcpmv.c        # 智能cp/mv
+│   │   ├── tkfind.c        # 增强版find
+│   │   └── tkdiff.c        # 文件比较
+│   │
+│   ├── text_tools/         # 文本处理工具(4个)
+│   │   ├── tkgrep.c        # 增强版grep
+│   │   ├── tkstream.c      # 流式文本处理
+│   │   ├── tkview.c        # CSV/JSON查看
+│   │   └── tkencode.c      # 编码转换
+│   │
+│   ├── system_tools/       # 系统信息工具(4个)
+│   │   ├── tkinfo.c        # 系统信息显示
+│   │   ├── tkmon.c         # 实时监控
+│   │   ├── tknet.c         # 网络状态
+│   │   └── tkhw.c          # 硬件信息
+│   │
+│   └── dev_tools/          # 开发辅助工具(4个)
+│       ├── tkcode.c        # 代码统计
+│       ├── tkconvert.c     # 格式转换
+│       ├── tkregex.c       # 正则测试
+│       └── tkdebug.c       # 网络调试
+│
+└── demo.sh                  # 演示脚本
+
+
+
+
+termkit/
+├── README.md                 # 项目说明（必含，含功能列表）
+├── Makefile                 # 构建管理（支持编译所有工具）
+├── build.sh                 # 一键编译脚本
+├── LICENSE                  # 开源协议（可选）
+│
+├── src/                     # C/C++源代码
+│   ├── common/             # 公共模块
+│   │   ├── utils.c         # 通用工具函数
+│   │   ├── utils.h
+│   │   ├── colors.c        # 终端颜色控制
+│   │   ├── colors.h
+│   │   ├── progress.c      # 进度条实现
+│   │   └── progress.h
+│   │
+│   ├── file_tools/         # 文件操作工具(4个)
+│   │   ├── tkls.c          # 增强版ls
+│   │   ├── tkls.h
+│   │   ├── tkcpmv.c        # 智能cp/mv
+│   │   ├── tkcpmv.h
+│   │   ├── tkfind.c        # 增强版find
+│   │   ├── tkfind.h
+│   │   ├── tkdiff.c        # 文件比较
+│   │   └── tkdiff.h
+│   │
+│   ├── text_tools/         # 文本处理工具(4个)
+│   │   ├── tkgrep.c        # 增强版grep
+│   │   ├── tkgrep.h
+│   │   ├── tkstream.c      # 流式文本处理
+│   │   ├── tkstream.h
+│   │   ├── tkview.c        # CSV/JSON查看
+│   │   ├── tkview.h
+│   │   ├── tkencode.c      # 编码转换
+│   │   └── tkencode.h
+│   │
+│   ├── system_tools/       # 系统信息工具(4个)
+│   │   ├── tkinfo.c        # 系统信息显示
+│   │   ├── tkinfo.h
+│   │   ├── tkmon.c         # 实时监控
+│   │   ├── tkmon.h
+│   │   ├── tknet.c         # 网络状态
+│   │   ├── tknet.h
+│   │   ├── tkhw.c          # 硬件信息
+│   │   └── tkhw.h
+│   │
+│   ├── dev_tools/          # 开发辅助工具(4个)
+│   │   ├── tkcode.c        # 代码统计
+│   │   ├── tkcode.h
+│   │   ├── tkconvert.c     # 格式转换
+│   │   ├── tkconvert.h
+│   │   ├── tkregex.c       # 正则测试
+│   │   ├── tkregex.h
+│   │   ├── tkdebug.c       # 网络调试
+│   │   └── tkdebug.h
+│   │
+│   └── main.c              # 主程序入口
+│
+├── python/                  # Python辅助工具
+│   ├── csv_viewer.py       # CSV查看（Python更适合）
+│   ├── json_viewer.py      # JSON查看
+│   ├── encode_tool.py      # 编码转换
+│   └── regex_tester.py     # 正则测试（交互式）
+│
+├── config/                  # 配置文件
+│   ├── termkit.conf        # 主配置
+│   ├── themes/             # 主题
+│   │   ├── default.conf
+│   │   └── dark.conf
+│   └── icons.conf          # 文件图标配置
+│
+├── tests/                   # 测试代码（简单测试）
+│   ├── test_runner.sh      # 测试脚本
+│   ├── test_files/         # 测试数据
+│   │   ├── sample.txt
+│   │   ├── test.csv
+│   │   └── test.json
+│   └── expected_output/    # 期望输出
+│
+├── examples/               # 使用示例
+│   ├── basic_usage.sh      # 基础用法
+│   ├── advanced_demo.sh    # 高级演示
+│   └── sample_files/       # 示例文件
+│       ├── code.c
+│       ├── data.csv
+│       └── config.json
+│
+└── docs/                   # 简单文档
+    ├── INSTALL.md          # 安装说明
+    ├── USAGE.md            # 使用手册
+    ├── API.md              # API参考（简单）
+    └── EXAMPLES.md         # 示例详解

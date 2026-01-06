@@ -1,0 +1,10 @@
+// 目的：所有工具都会用到的通用函数
+// 使用频率：★★★★★（几乎所有工具都会用到）
+
+// 包含的功能：
+// - 文件操作：copy_file(), move_file(), delete_file()
+// - 字符串处理：trim(), split(), join()
+// - 路径处理：get_basename(), get_dirname(), normalize_path()
+// - 错误处理：print_error(), print_warning()
+// - 类型检查：is_file(), is_dir(), is_link()
+// - 格式化：format_size(), format_time()
